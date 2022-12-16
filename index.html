@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portafolio DisVa</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="../FINAL P. WEB/css/responsive.css">
+</head>
+<body>
+<!--sección Inicio-->
+    <header>
+		<div class="logo">
+			<i class="fa-solid fa-star"></i>
+			<h1>DisVa</h1>
+		</div>
+		<div class="contenedor">
+			<nav class="menu">
+				<a href="#">Inicio</a>
+				<a href="#">Servicios</a>
+				<a href="#">Trabajos</a>
+				<a href="#">Contacto</a>
+			</nav>
+		</div>
+    </header>
+
+<!-- sección servicios -->
+<section id="servicios" class="servicios">
+	<div class="fila">
+		<div class="col">
+			<div class="card">
+				<div class="icono color1">
+					<div class="circulo">
+						<i class="fa-solid fa-code"></i>
+					</div>
+				</div>
+				<h3>Diseño Web</h3>
+				<p>Como diseñadora web, mi objetivo es causar un impacto positivo en los clientes, los compañeros de trabajo e Internet utilizando mis habilidades y experiencia para diseñar sitios web convincentes y atractivos.
+				</p>
+
+				<a href="../FINAL P. WEB/diseño web/" target="_blank">Leer Más</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<div class="icono color2">
+					<div class="circulo">
+						<i class="fa-solid fa-palette"></i>
+					</div>
+				</div>
+				<h3>Diseño Gráfico</h3>
+				<p>Diseño de empaques (packaging).Diseño de contenidos visuales para redes sociales.Diseño de recursos gráficos para soportes publicitarios.
+				   Refrescamiento visual de las líneas de productos para aumentar las ventas.</p>
+
+				<a href="../FINAL P. WEB/diseño gráfico/" target="_blank">Leer Más</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<div class="icono color3">
+					<div class="circulo">
+						<i class="fa-solid fa-circle-info"></i>
+					</div>
+				</div>
+				<h3>Soporte Clientes</h3>
+				<p>Habilidasdes Técnicas: <br> CSS, HTML,flexbox, Javascript, WordPress, Git, githubPhotoshop, Illustrator,Indesign.</p>
+
+				<a href="../FINAL P. WEB/soporte clientes/" target="_blank">Leer Más</a>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<!--sección trabajos-->
+    <section class="trabajos">
+	<h3 class="titulo">Mis Trabajos</h3>
+	<nav>
+		<a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+		<a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+		<a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
+	</nav>
+	<section class="galeria">
+		<div class="item disenio">
+			<img src="imagenes/trabajos/Diseño 4.jpg" alt="">
+			<div class="info">
+				<h2>Digital</h2>
+				<a href="../FINAL P. WEB/imagenes/digital/" target="_blank">Ver Trabajo</a>
+			</div>
+		</div>
+		<div class="item disenio">
+			<img src="imagenes/trabajos/Infografía The Big Bang.jpg" alt="">
+			<div class="info">
+				<h2>Diseño - papel</h2>
+				<a href="../FINAL P. WEB/imagenes/diseño-papel/" target="_blank">Ver Trabajo</a>
+			</div>
+		</div>
+		<div class="item programacion">
+			<img src="imagenes/trabajos/Newsletter Turespirocafe.png" alt="">
+			<div class="info">
+				<h2>Newsletter</h2>
+				<a href="../FINAL P. WEB/imagenes/newletter/" target="_blank">Ver Trabajo</a>
+			</div>
+		</div>
+	</section>
+       
+
+<!-- sección contacto -->
+		<footer>
+			<section class="contacto" id="contacto">
+				<div class="contenedor-contacto">
+					<h2>Contacto</h2>
+					<div class="fila">
+						<div class="col">
+							<div class="info">
+								<h3>Email:</h3>
+								<p>tassaravs@gmail.com</p>
+							</div>
+							<div class="info">
+								<h3>Teléfono:</h3>
+								<p>1138044914</p>
+							</div>
+							<div class="info">
+								<h3>País</h3>
+								<p>Argentina</p>
+							</div>
+							<div class="info">
+								<h3>Ciudad:</h3>
+								<p>Buenos Aires</p>
+							</div>
+						</div>
+						<div class="col">
+							<input type="text" placeholder="Nombre...">
+							<input type="text" placeholder="Correo...">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+							<input type="submit" value="Enviar" class="btn">
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="redes">
+				<a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook-f"></a>
+				<a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+				<a href="https://github.com/" target="_blank" class="fa-brands fa-github"></a>
+				</div>
+			<p>@copyright</p>
+		</footer>
+		<script src="app.js"></script>
+	</body>
+</html>
+		

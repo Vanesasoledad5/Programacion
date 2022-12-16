@@ -1,0 +1,305 @@
+/*fuente */
+@import url('https://fonts.googleapis.com/css2? family= Oswald & family= Poppins:wght@400;600;800 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', 'open sans', 'sans-serif';
+}
+body{
+    background-color:#fff;
+}
+
+/* SECCION INICIO */
+
+header {
+    background: url(../imagenes/1.jpg) #fadd3a;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    padding: 50px 100px;
+}
+.logo i{
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+}
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+header nav a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+/* SECCION SERVICIOS */
+.servicios{
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+    position: relative;
+    top: 100px;
+    z-index: 10;
+}
+.servicios .fila{ /*margen*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.servicios .fila .col{
+    text-align: center;
+    width: 30%;
+}
+.servicios .fila .col .card{ /*Borde de caja contenedora de imagen*/
+    border: 1px solid #fadd3a;
+    height: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.servicios .icono{ /*circulo fondo*/
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.servicios .icono .circulo{ /*circulo borde blanco*/
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+.color1{ /*color circulo icono*/
+    background:#ff9900;
+}
+.color2{
+    background: #0039a9;
+}
+.color3{
+    background:  #2d9501;
+}
+.servicios h3{
+    margin-bottom: 20px;
+}
+.servicios .card p{ /*texto*/
+    color: #8d8d8d;
+    line-height: 28px;
+    font-size: 12px;
+}
+.servicios .card a{  /*Leer más*/
+    text-decoration: none;
+    color: #ff5b00;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* SECCION TRABAJOS */
+.trabajos{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.trabajos .titulo{ /*Mis trabajos*/
+    font-size: 24px;
+    color: #ff9900;
+    text-align: left;
+    padding-top: 150px;
+}
+.trabajos h2{
+    text-align: center;
+}
+.trabajos nav{
+    text-align: center;
+    margin: 30px 0;
+}
+.trabajos nav a{ /*items navegador*/
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #3e3b42;
+    font-weight: bold;
+    padding: 3px 10px;
+    border: 3px solid transparent;
+}
+.trabajos nav a:hover{ /*boton navegador*/
+    border: 3px solid #ff5b00;
+}
+
+.trabajos .galeria .item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.trabajos .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap:30px;
+}
+.trabajos .galeria .item{ /*caja imagen*/
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #42413b ;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.trabajos .galeria .item .info{ /*caja imagen - cambios al pasar el cursor*/
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color:#fff ;
+    width: 100%;
+    padding: 50px 20px;
+    opacity: 0;
+    transition: .5s;
+}
+.trabajos .galeria .item .info a{ /*ver trabajo*/
+    display: block;
+    margin: 24px;
+    text-decoration: none;
+    color: #fadd3a;
+    font-weight: bold;
+}
+.trabajos .galeria .item .info h2{
+    color: #ff5b00;
+    text-align: center;
+}
+.trabajos .galeria .item:hover .info{
+    opacity: 1;
+    top: 0;
+}
+/* SECCIÓN CONTACTO */
+
+.contacto{  /*Contenedor*/
+    background:#fadd3a;
+    background-size: cover;
+    color: #fff;
+    margin-top: 100px;
+    padding: 50px 20px;
+}
+.contacto .contenedor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    text-align:left;
+    padding-bottom: 30px;
+}
+.contacto .contenedor-contacto .fila{
+    display: flex;
+}
+.contacto .contenedor-contacto .fila .col{
+    width: 50%;
+}
+.contacto .contenedor-contacto .info{ /*Lineas verticales datos*/
+    margin-bottom: 30px;
+    border-left: 5px solid #000;
+    padding-left: 8px;
+}
+.contacto .contenedor-contacto .info p{ /*Datos*/
+    color: #000;
+}
+.contacto .contenedor-contacto .info {
+    text-align: left;
+}
+.contacto input, .contacto textarea{ /*caja contacto*/
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #000 ;
+    margin-bottom: 20px;
+    outline: none;
+    color:#fff;
+}
+.contacto .btn{ /*Boton de enviar*/
+    background-color: none;
+    padding: 5px 40px;
+    border: 2px solid;
+    color: #fff;
+    cursor: pointer;
+    background: #000;
+}
+
+
+.redes a{ /*espacio entre iconos*/
+    padding: 20px 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes a:hover{
+    background: #fadd3a;
+    opacity: 50%;
+    border-radius: 50px;
+    font-size: 24px;
+    padding: 5px 20px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 800px) {
+    header .menu {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    .servicios .card p{ 
+        line-height: 15px;
+    }
+    .servicios .icono{
+        display: none;
+    }
+    .servicios .fila .col .card {
+        font-size: 12px;
+        width: 46%;
+    }   
+}
+
+@media screen and (max-width: 800px) {
+    .trabajos .galeria .item .info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    contacto .contenedor-contacto  {
+        font-size: 12px;
+    }
+}
